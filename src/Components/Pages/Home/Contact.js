@@ -13,38 +13,49 @@ function Contact() {
             .then((result) => {
                 console.log(result.text);
                 console.log('message sent');
+                e.target.reset();
             }, (error) => {
                 console.log(error.text);
             });
 
     }
     return (
-        <div>
+        <div className='pt-10 '>
             <h2 className='text-5xl text-center pt-20 uppercase font-extrabold'>Please Connect with me </h2>
-            <>
-                <div class="card lg:card-side px-20 bg-base-100 shadow-xl">
-                    <figure className='card-body'>
+            <div className='flex items-center  content-center'>
+                <div class="card lg:card-side pt-7 px-20">
+                    <figure className=''>
                         <img src="https://growmeda.com/wp-content/uploads/2019/10/hubspot-template-design-service.png" alt="Album" />
                     </figure>
 
 
 
-                    <div class="card-body bg-slate-100">
-                        <h2 class="text-3xl font-bold uppercase text-center">Please tell me your query</h2>
-                        <form ref={form} onSubmit={sendEmail}>
-                            <label>Name</label>
-                            <input type="text" name="to_name" /> <br />
-                            <label>Email</label>
-                            <input type="email" name="from_name" /> <br />
-                            <label>Message</label>
-                            <textarea name="message" />
-                            <button className='btn btn-primary' type="submit" value="Send" >SEND</button>
-                        </form>
+                    <div class="card lg:card-side pt-7 px-20 bg-slate-100">
+                        <div class="form-control w-full max-w-xs">
+                            <form ref={form} onSubmit={sendEmail}>
+                                <h2 class="text-3xl font-bold uppercase text-center">Please tell me your query</h2>
+                                <label class="label">
+                                    <span class="label-text">Your Name?</span>
+                                </label>
+                                <input type="text" name="to_name" placeholder="Your Name" class="input input-bordered w-full max-w-xs" />
+                                <label class="label">
+                                    <span class="label-text">Your Email?</span>
+                                </label>
+                                <input type="email" name="from_name" placeholder="Your Email?" class="input input-bordered w-full max-w-xs" />
+                                <label class="label">
+                                    <span class="label-text">Please Explain?</span>
+                                </label>
+                                <textarea name="message" className='textarea-bordered  w-full max-w-xs' />
+
+                                <button type="submit" class="btn btn-block mt-3 btn-primary">Send</button>
+                            </form>
+
+                        </div>
 
 
                     </div>
                 </div>
-            </>
+            </div>
 
         </div>
     )

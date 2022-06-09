@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer class="footer p-10 bg-neutral text-neutral-content">
+        <footer class="footer mt-10 p-10 bg-neutral text-neutral-content">
             <div>
                 <p></p>
             </div>
