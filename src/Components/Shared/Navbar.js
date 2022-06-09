@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = ({ children }) => {
+
     return (
         <div class="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -13,9 +14,12 @@ const Navbar = ({ children }) => {
                     <div class="flex-none hidden lg:block">
                         <ul class="menu menu-horizontal uppercase gap-x-5">
                             <li><NavLink className='rounded-lg' to='/'>Home</NavLink></li>
-                            <li><NavLink className='rounded-lg' to='/projects'>Projects</NavLink></li>
+                            <li><NavLink className='rounded-lg' to='/service'>My Service</NavLink></li>
+                            <li><NavLink className='rounded-lg' to='/projects'>My Projects</NavLink></li>
                             <li><NavLink className='rounded-lg' to='/blogs'>Blogs</NavLink></li>
                             <li><NavLink className='rounded-lg' to='/about'>About</NavLink></li>
+                            <li><a href='https://drive.google.com/u/0/uc?id=1HVoO54EMPKV0Y_t4cbiVozNsZ8uRNTvx&export=download' target='_blank' download='resume.pdf' rel="noopener noreferrer"  > Download Resume</a></li>
+
                         </ul>
                     </div>
                     <div class="flex-none lg:hidden">
@@ -31,6 +35,7 @@ const Navbar = ({ children }) => {
                 <label for="my-drawer-3" class="drawer-overlay"></label>
                 <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 uppercase items-center">
                     <li><NavLink to='/'>Home</NavLink></li>
+                    <li><NavLink className='rounded-lg' to='/service'>My Service</NavLink></li>
                     <li><NavLink to='/projects'>Projects</NavLink></li>
                     <li><NavLink to='/blogs'>Blogs</NavLink></li>
                     <li><NavLink to='/about'>About</NavLink></li>
