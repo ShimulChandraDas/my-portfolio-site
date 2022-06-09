@@ -7,8 +7,8 @@ function Banner() {
             <div class="hero-content flex-col lg:flex-row">
 
                 <div>
-                    <h3 class="text-3xl ">Hello World,</h3>
-                    <h1 class="text-4xl pt-4 ">I am <strong className='uppercase'>Shimul Chandra Das</strong></h1>
+                    <h3 class="text-xl ">Hello World,</h3>
+                    <h1 class="text-xl pt-4 ">I am <strong className='uppercase'>Shimul Chandra Das</strong></h1>
                     <p class="py-6 max-w-xl">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     <button class="btn btn-primary">Explore Me</button>
                 </div>
