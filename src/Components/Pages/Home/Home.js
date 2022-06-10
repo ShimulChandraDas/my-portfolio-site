@@ -4,6 +4,7 @@ import Banner from './Banner'
 import Service from './Service'
 import Skills from './Skills'
 import Contact from './Contact'
+import Testimonial from './Testimonial'
 
 function Home() {
     return (
@@ -13,6 +14,8 @@ function Home() {
             <Service />
             <Projects />
             <Contact />
+            <Testimonial />
+
 
 
 

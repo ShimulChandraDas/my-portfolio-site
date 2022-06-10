@@ -18,7 +18,7 @@ const Navbar = ({ children }) => {
                             <li><NavLink className='rounded-lg' to='/projects'>My Projects</NavLink></li>
                             <li><NavLink className='rounded-lg' to='/blogs'>Blogs</NavLink></li>
                             <li><NavLink className='rounded-lg' to='/about'>About</NavLink></li>
-                            <li><a href='https://drive.google.com/u/0/uc?id=1HVoO54EMPKV0Y_t4cbiVozNsZ8uRNTvx&export=download' target='_blank' download='resume.pdf' rel="noopener noreferrer"  > Download Resume</a></li>
+
 
                         </ul>
                     </div>
